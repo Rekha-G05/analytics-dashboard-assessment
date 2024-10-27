@@ -2,44 +2,65 @@
 
 ## Overview
 
-The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills. Feel free to use any tech stack you want to create the dashboard.
+The Electric Vehicle Dashboard Analytics provides a visual representation of electric vehicle data, allowing users to explore key metrics and insights related to electric vehicles. This project features interactive charts and a data table for in-depth analysis.
 
-## Dataset
+## Features
 
-The Electric Vehicle Population dataset is available in the [Electric Vehicle Population Data (CSV)](./data-to-visualize/Electric_Vehicle_Population_Data.csv) within this repository, for more information about the dataset visit [kaggle dataset](https://www.kaggle.com/datasets/willianoliveiragibin/electric-vehicle-population).
+- **Dynamic Data Visualization**: Interactive line charts display electric range data by model year.
+- **Data Filtering**: Users can filter the displayed data based on various criteria.
+- **Tab Navigation**: Seamlessly switch between chart and data table views.
+- **Responsive Design**: The dashboard is optimized for both desktop and mobile viewing.
+- **Horizontal Scrolling**: Data tables support horizontal scrolling for better visibility of columns.
 
-**Note:** We've reduced the dataset in the repository to keep the data size small in the frontend bundle.
+## Tech Stack
 
-## Tasks
+- **React**: JavaScript library for building user interfaces.
+- **Chart.js**: Library for rendering charts and visualizations.
+- **React Window**: Efficiently render large lists and tables.
+- **CSS**: Custom styles for responsive design.
 
-### Dashboard Creation:
+## Installation
 
-- Create a frontend dashboard that presents key insights from the dataset.
-- Design the dashboard to effectively communicate important metrics and visualizations.
-- Include visual representations such as charts, graphs, or tables to showcase trends and relationships in the data.
-- Ensure the dashboard is user-friendly and intuitive for exploring the dataset.
+1. Clone the repository:
+ 
+   git clone https://github.com/Rekha-G05/analytics-dashboard-assessment.git
 
-### Deployment:
+   cd analytics-dashboard-assessment
+   
+  
+2. Install dependencies:
+   npm install
 
-- Deploy your frontend dashboard to a hosting platform of your choice.
-- Make sure the dashboard is publicly accessible.
+3. Start the development server:
+   npm start
 
-## Evaluation Criteria
+4. Open your browser and go to `http://localhost:3000`.
 
-Your submission will be evaluated based on:
+## Usage
 
-- **Analytical Depth:** The depth of your analysis and insights derived from the dataset.
-- **Dashboard Design:** Clarity, aesthetics, and usability of the frontend dashboard.
-- **Insightfulness:** Effectiveness in conveying key insights about electric vehicles.
+1. Upon loading, the dashboard fetches electric vehicle data from a CSV file.
+2. Use the tab navigation to switch between the chart and the data table.
+3. Utilize the filter input to narrow down displayed results in the data table.
+4. Scroll horizontally in the data table to view all columns.
 
-## Submission Guidelines
+## CSV Data Format
 
-- Fork this repository to your GitHub account.
-- Complete your analysis and create the frontend dashboard.
-- Deploy the dashboard to a hosting platform.
-- Update this [README.md](README.md) file with the URL to your live dashboard.
-- **Repository Access:** Keep your repository private to avoid visibility by other candidates. Add the following email addresses as collaborators to the repository, these are our internal emails and will be evaluating your assessment:
-  - vedantp@mapup.ai
-  - ajayap@mapupa.ai
-  - divyanshs@mapup.ai
-- Finally, please fill out the google form that you received via email to submit the assessment for review before 2024-06-16 11:59 PM.
+The dashboard utilizes a CSV file with the following headers:
+
+- VIN (1-10)
+- County
+- City
+- State
+- Postal Code
+- Model Year
+- Make
+- Model
+- Electric Vehicle Type
+- Clean Alternative Fuel Vehicle (CAFV) Eligibility
+- Electric Range
+- Base MSRP
+- Legislative District
+- DOL Vehicle ID
+- Vehicle Location
+- Electric Utility
+- 2020 Census Tract
